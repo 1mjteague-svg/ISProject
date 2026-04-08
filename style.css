@@ -1,0 +1,203 @@
+/* Michael Teague — Surf Music Page Custom Stylesheet */
+
+/* ── Font & Color Variables ── */
+:root {
+  --sand: #f5e6c8;
+  --ocean: #1a6b8a;
+  --wave: #2ec4b6;
+  --sunset: #e76f51;
+  --dark: #1a1a2e;
+  --text: #2d2d2d;
+}
+
+/* ── Body ── */
+body {
+  font-family: 'Georgia', serif;
+  background-color: var(--sand);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Header ── */
+#page-header {
+  background: linear-gradient(160deg, var(--ocean) 0%, var(--dark) 100%);
+  color: white;
+  text-align: center;
+  padding: 60px 20px 40px;
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  letter-spacing: 3px;
+}
+
+#page-header h1 {
+  font-size: 3.5rem;
+  color: var(--wave);
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+  margin-bottom: 8px;
+}
+
+#page-header p {
+  font-family: 'Georgia', serif;
+  font-size: 1.1rem;
+  color: var(--sand);
+  letter-spacing: 1px;
+}
+
+/* ── Navigation ── */
+#main-nav {
+  background-color: var(--dark);
+  padding: 12px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+#main-nav a {
+  color: var(--wave);
+  text-decoration: none;
+  margin: 0 18px;
+  font-family: 'Arial', sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+#main-nav a:hover {
+  color: var(--sunset);
+}
+
+/* ── Content Sections (divs) ── */
+#intro-section {
+  max-width: 860px;
+  margin: 48px auto;
+  padding: 0 24px;
+  text-align: center;
+}
+
+#intro-section p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+#bands-section {
+  max-width: 860px;
+  margin: 0 auto 48px;
+  padding: 0 24px;
+}
+
+#bands-section h2 {
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  color: var(--ocean);
+  font-size: 2rem;
+  border-bottom: 3px solid var(--sunset);
+  padding-bottom: 8px;
+  margin-bottom: 24px;
+  letter-spacing: 2px;
+}
+
+#media-section {
+  background-color: var(--dark);
+  color: white;
+  padding: 48px 24px;
+  text-align: center;
+}
+
+#media-section h2 {
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  color: var(--wave);
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin-bottom: 28px;
+}
+
+/* ── Band Cards ── */
+.band-card {
+  background: white;
+  border-left: 5px solid var(--wave);
+  border-radius: 8px;
+  padding: 18px 22px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.band-card h3 {
+  color: var(--ocean);
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+
+.band-card p {
+  color: #555;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* ── Lists ── */
+ol.surf-list {
+  font-size: 1.05rem;
+  line-height: 2;
+  color: var(--text);
+}
+
+ul.sub-list {
+  margin-top: 6px;
+  color: var(--ocean);
+  font-style: italic;
+}
+
+/* ── Image ── */
+.surf-img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  border: 4px solid var(--wave);
+  margin: 24px auto;
+  display: block;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.18);
+}
+
+/* ── Video wrapper ── */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 700px;
+  margin: 0 auto 32px;
+  border-radius: 12px;
+  border: 3px solid var(--wave);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: 0;
+  border-radius: 10px;
+}
+
+/* ── Tableau wrapper ── */
+.tableau-wrapper {
+  max-width: 760px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 3px solid var(--wave);
+}
+
+/* ── Footer ── */
+#page-footer {
+  background-color: var(--ocean);
+  color: white;
+  text-align: center;
+  padding: 24px;
+  font-family: 'Arial', sans-serif;
+  font-size: 0.9rem;
+}
+
+#page-footer a {
+  color: var(--wave);
+}
